@@ -89,12 +89,42 @@ printList(cats);
 
 // question 8
 
-const
+let catProperty = "";
 
 function createCats(cats) {
     for (let i = 0; i < cats.length; i++) {
-        console.log(cats[i]);
+        catProperty += "<h5>" + cats[i].name + "</h5>";
+
+
+        let catAge = "Age unknown";
+
+        if (cats[i].age) {
+            catAge = cats[i].age;
+        }
+        
+        catProperty += "<p>" + catAge + "</p>";
+
+        // console.log(catProperty);
+        
     }
+    return catProperty;
+    
 }
 
-createCats(cats);
+const finalHtml = createCats(cats);
+
+// console.log(finalHtml);
+
+const catContainer = document.querySelector(".cat-container");
+catContainer.innerHTML = finalHtml;
+
+// result: 
+
+// Blob
+// 10
+
+// Harold
+// Unknown
+
+// Blurt
+// 21
