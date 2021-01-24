@@ -51,7 +51,7 @@ const resultsContainer = document.querySelector(".results");
 resultsContainer.innerHTML = "<p>" + "New paragraph" + "</p>";
 resultsContainer.style.background = "yellow";
 
-// result: Added a new paragraph with an yellow background color
+// result: added a new paragraph with an yellow background color
 
 
 
