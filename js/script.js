@@ -13,12 +13,11 @@ cat.complain();
 
 
 
-
 // question 2
 
 const heading = document.querySelector("h3");
 
-heading.innerHTML = `Updated Subheading`;
+heading.innerHTML = "Updated Subheading";
 
 
 
@@ -45,8 +44,18 @@ for (let i = 0; i < paragraphs.length; i++) {
 
 
 
+// question 6
+
+const resultsContainer = document.querySelector(".results");
+
+resultsContainer.innerHTML = "<p>" + "New paragraph" + "</p>";
+resultsContainer.style.background = "yellow";
+
+// result: Added a new paragraph with an yellow background color
 
 
+
+// question 7
 
 const cats = [
     {
@@ -62,5 +71,30 @@ const cats = [
     }
 ];
 
+function printList(list) {
+
+    for (let i = 0; i < list.length; i++) {
+
+        console.log(list[i].name);
+
+    }
+    
+}
+
+printList(cats);
+
+// result: Blob, Harold, Blurt
 
 
+
+// question 8
+
+const
+
+function createCats(cats) {
+    for (let i = 0; i < cats.length; i++) {
+        console.log(cats[i]);
+    }
+}
+
+createCats(cats);
